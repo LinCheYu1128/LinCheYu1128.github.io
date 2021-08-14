@@ -1,0 +1,49 @@
+#backvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.pages {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    position: fixed;
+}
+
+.gallery {
+    width: 80%;
+    display: grid;
+    grid-auto-rows: calc((20vw+16vh));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.gallery_overlay {
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+    background: rgba(57, 73, 81, 0.7);
+    background-size: cover;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+} 
+.gallery_overlay:hover {
+    opacity: 0;
+}
+.gallery_img {
+    float: left;
+    padding: 5px;
+}
+.fa-instagram {
+    width: 50px;
+    animation-duration: 4s;
+    transition: width 1s;
+    
+}
+.fa-instagram:hover {
+    transform-origin: center;
+    width: 100px;
+    
+}
