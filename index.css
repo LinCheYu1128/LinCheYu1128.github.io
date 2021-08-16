@@ -2,48 +2,108 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
 }
 .pages {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
-    position: fixed;
 }
 
 .gallery {
-    width: 80%;
+    width: 60%;
     display: grid;
-    grid-auto-rows: calc((20vw+16vh));
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 20%;
 }
 .gallery_overlay {
-    height: 100%;
+    position:absolute;
+    height: 100% ;
     width: 100%;
-    color: #FFFFFF;
-    background: rgba(57, 73, 81, 0.7);
-    background-size: cover;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6) ; 
+    animation-duration: 1s; 
+    clip-path:inset(0 4px 4px 0);
+    /* border-radius: 10%; */
+    /* padding: 1px; */
+   
 } 
+.gallery p{
+    color: #FFFFFF;
+    font-size: 20px;
+    /* display: flex;
+    margin: 25%;
+    justify-content: center; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+@keyframes touch {
+    from {opacity: 1.0;}
+    to {opacity: 0;}
+     
+}
 .gallery_overlay:hover {
+    background-repeat: no-repeat;
+    animation-name: touch;
     opacity: 0;
 }
 .gallery_img {
-    float: left;
-    padding: 5px;
+    padding: 0 2px;
+    position: relative;
+
 }
-.fa-instagram {
+img {
+    /* border-radius: 10%; */
+    max-width: 100%;
+    /* opacity: 0.4; */
+}
+.fab {
     width: 50px;
     animation-duration: 4s;
-    transition: width 1s;
+    /* transition: transform 1s;     */
+    transition: width 1s;   
     
 }
 .fa-instagram:hover {
-    transform-origin: center;
-    width: 100px;
-    
+    width: 300px;
+    /* transform: translate(-90px);    */
+    /* display: inline;  */
 }
+
+.fa-github:hover {
+    width: 300px;
+    /* transform: translate(-105px); */
+    /* display: inline;  */
+}
+a {
+    text-decoration:none;
+}
+.link_text {
+    display: inline;
+    position: relative;
+    bottom: 8px;
+    opacity: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    animation-duration: 2s;
+}
+.fab:hover .link_text{
+    animation-name: text_appear;
+    opacity: 1;
+}
+@keyframes text_appear {
+    from {opacity: 0;}
+    to {opacity: 1;}   
+}
+/* .fa-github {
+    width: 50px;
+    animation-duration: 4s;
+    transition: width 1s;    
+}
+.fa-github:hover {
+    width: 500px;
+} */
