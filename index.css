@@ -6,11 +6,24 @@
     min-height: 100vh;
     z-index: -1;
 }
-.pages {
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-}
 
+:root {
+    background-color: #f8f2dc;
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Volkhov', serif; */
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+}
+.titlelogo {
+    font-family: 'Cinzel', serif;
+    width: 400px;
+    display:block; 
+    margin: auto;
+}
+.titlelogo p {
+    margin-top: 0px;
+}
 .gallery {
     width: 60%;
     display: grid;
@@ -99,11 +112,3 @@ a {
     from {opacity: 0;}
     to {opacity: 1;}   
 }
-/* .fa-github {
-    width: 50px;
-    animation-duration: 4s;
-    transition: width 1s;    
-}
-.fa-github:hover {
-    width: 500px;
-} */
