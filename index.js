@@ -1,23 +1,35 @@
 // windows 整個瀏覽器
 // document 拿標籤(插入CSS....)
 //call back
-window.addEventListener('load',function(){
-    const p1 = document.getElementById('de')
-    console.log(p1)
-    p1.innerText = 'fuck you'
+function openNav() {
+    document.getElementById("sidebar_nav").style.width = "250px";
+    document.getElementById("openbtn").style.visibility = "hidden";
+    document.getElementById("closebtn").style.visibility = "visible";
+    // document.getElementById("openbtn").style.fontSize = "0px";
+    // document.getElementById("closebtn").style.fontSize = "40px";
+}
 
-    const London = this.document.getElementById('London')
-    const b1 = document.getElementById('hide')
-    b1.addEventListener('hover', function (){
-        console.log('點下去')
-        London.innerHTML = '<p> </p>'
-    })
+function closeNav() {
+    document.getElementById("sidebar_nav").style.width = "0";
+    document.getElementById("openbtn").style.visibility = "visible";
+    document.getElementById("closebtn").style.visibility = "hidden";
+    // document.getElementById("openbtn").style.fontSize = "25px";
+    // document.getElementById("closebtn").style.fontSize = "0px";
+}
+// window.addEventListener('load', function () {
+//     const p1 = document.getElementById('de')
+//     console.log(p1)
+//     p1.innerText = 'fuck you'
 
-    const in1 = this.document.getElementById('input')
-    in1.addEventListener('keyup', function(key){
-        console.log(key.target.value)
-    })
+//     const London = this.document.getElementById('London')
+//     const b1 = document.getElementById('hide')
+//     b1.addEventListener('hover', function () {
+//         console.log('點下去')
+//         London.innerHTML = '<p> </p>'
+//     })
 
-    
-    
-})
+//     const in1 = this.document.getElementById('input')
+//     in1.addEventListener('keyup', function (key) {
+//         console.log(key.target.value)
+//     })
+// })

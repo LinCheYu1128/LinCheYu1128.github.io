@@ -1,123 +1,107 @@
-@import url('https://fonts.goobtngleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+.Logo {
+  height: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
 }
-.main_box{
-    position: relative;
-    /* background-color: antiquewhite; */
-    background: url('./photo/jpeg-optimizer_DSCF0425.jpg') right no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
+
+.side_nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 216, 45, 1);
+  overflow-x: hidden;
+  transition: 0.2s;
+  padding-top: 66px;
 }
-.main_box .sidebar_menu{
-    position: fixed;
-    height: 100vh;
-    width: 280px;
-    left: -280px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    transition: all 0.3s linear;
+
+.nav_item {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  transition: all 0.3s ease-out;
 }
-.sidebar_menu .logo{
-    position: absolute;
-    width: 100%;
-    height: 60px;
-    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
+
+.side_nav a:hover {
+  color: #f1f1f1;
 }
-.sidebar_menu .logo a{
-    color: #fff;
-    font-size: 25px;
-    font-weight: 500;
-    position: absolute;
-    left: 50px;
-    line-height: 60px;
-    text-decoration: none;
-  }
-  .sidebar_menu .menu{
-    position: absolute;
-    top: 80px;
-    width:100%;
-  }
-  .sidebar_menu .menu li{
-    margin-top: 6px;
-    padding: 14px 20px;
-  }
-  .sidebar_menu .menu i{
-    color: #fff;
-    font-size: 20px;
-    padding-right: 8px;
-  }
-  .sidebar_menu .menu a{
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  .sidebar_menu .menu li:hover{
-    border-left: 1px solid #fff;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-  }
-  .sidebar_menu .social_media{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    list-style: none;
-    cursor: pointer;
-  }
-  .sidebar_menu .social_media i{
-    text-decoration: none;
-    padding: 0 5px;
-    color: #fff;
-    opacity: 0.6;
-    font-size: 20px;
-  }
-  .sidebar_menu .social_media i:hover{
-    opacity: 1;
-    transition: all 0.2s linear;
-    transform: scale(1.01);
-  }
-  #check{
+
+#closebtn {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  font-size: 40px;
+  /* margin-left: 50px; */
+  text-decoration: none;
+  visibility: hidden;
+  /* transition: opacity 0.3s ; */
+  color: #818181;
+}
+
+#openbtn {
+  cursor: pointer;
+  font-size: 25px;
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  text-decoration: none;
+  /* transition: opacity 0.3s ; */
+  color: #818181;
+}
+
+.slide_1 {
+  width: 100%;
+
+}
+
+@media screen and (min-width:650px) {
+  #openbtn {
     display: none;
   }
-  .main_box .btn_one i{
-    color: #fff;
-    font-size: 30px;
-    font-weight: 700;
-    position: absolute;
-    left: 16px;
-    line-height: 60px;
+
+  #closebtn {
+    display: none;
+  }
+
+  .Logo {
+    margin-left: 8px;
+
+  }
+
+  .top_nav {
+    display: flex;
+  }
+  
+  .side_nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    width: auto !important;
+    transition: unset;
+    padding-top: 0px;
+    left: 100px;
+  }
+
+  .nav_item {
     cursor: pointer;
-    opacity: 1;
-    transition: all 0.3s linear;  
+    font-size: 16px;
+    color: #0b0b0b;
+    height: 25px;
+    padding-left: 20px;
+    padding-top: 30px;
+    transition: unset;
+    text-decoration: none;
   }
-   .sidebar_menu .btn_two i{
-    color: #fff;
-    font-size: 25px;
-    line-height: 60px;
-    position: absolute;
-    left: 240px;
-    cursor: pointer;
-    opacity: 0;
-    transition: all 0.3s linear;
-  }
-  .btn_one i:hover{
-    font-size: 29px;
-  }
-  .btn_two i:hover{
-    font-size: 24px;
-  }
-  #check:checked ~ .sidebar_menu{
-    left: 0;
-  }
-  #check:checked ~ .btn_one i{
-    opacity: 0;
-  }
-  #check:checked ~ .sidebar_menu .btn_two i{
-    opacity: 1;
-  }
+}

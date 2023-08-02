@@ -1,63 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>CheYu Jonathan's Website </title>
+    <title>Jonathan's Website </title>
     <link href="./index.css" rel="stylesheet" type="text/css">
+
 </head>
+
 <body>
-    <div class="main_box">
-        <input type="checkbox" id="check">
-        <div class="btn_one">
-            <label for="check">
-                <i class="fas fa-bars"></i>
-            </label>
+    <div class="top_nav">
+        <img class="Logo" src="./YusLogo_temp.png">
+        <div id="sidebar_nav" class="side_nav">
+            <a class="nav_item" href="#">Home</a>
+            <a class="nav_item" href="#">About</a>
+            <a class="nav_item" href="#">Work</a>
+            <a class="nav_item" href="#">Gallery</a>
+            <a class="nav_item" href="#">Collection</a>
         </div>
-        <div class="sidebar_menu">
-            <div class="logo">
-                <a href="#">Menu</a>
-            </div>
-            <div class="btn_two">
-                <label for="check">
-                    <i class="fas fa-times"></i>
-                </label>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-picture-o">&ensp;Top</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-picture-o">&ensp;About</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-picture-o">&ensp;Work</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-picture-o">&ensp;Gallery</i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social_media">
-                <ul>
-                    <a href="https://www.instagram.com/jonathanlin_1128/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/LinCheYu1128" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                </ul>
-            </div>
-        </div>
+        <a id="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+        <a id="openbtn"  href="javascript:void(0)" onclick="openNav()">&#9776;</a>
+    </div>
+    <div class="slide_show">
+        <img class="slide_1" src="./photo/Home.jpg">
+    </div>
+
+    <div class="social_media">
+        <ul>
+            <a href="https://www.instagram.com/jonathanlin_1128/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/LinCheYu1128" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </ul>
+    </div>
+    <div class="p-footer_copy">
+        <small>Copyright © 2023 Jonathan Lin. All rights reserved.</small>
     </div>
 </body>
 <script src="https://kit.fontawesome.com/2bd438f18a.js" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+
 </html>
