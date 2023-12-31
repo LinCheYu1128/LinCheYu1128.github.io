@@ -5,6 +5,16 @@
     margin-right: 0.5in;
     font-family: Georgia, Arial;
 }
+/*************** Main profile ******************/
+table.info {
+    /* border-collapse: collapse; */
+    padding-bottom: 20px;
+}
+h2 {
+    padding-bottom: 10px;
+	color: #000000; 
+    font-family: Georgia, Arial;
+}
 p{
     /* padding-left: 10px; */
     padding-bottom: 3px;
@@ -28,11 +38,7 @@ span.h1 {
 	color: #000080; 
     font-family: Georgia, Arial;
 }
-h2 {
-    padding-bottom: 10px;
-	color: #000000; 
-    font-family: Georgia, Arial;
-}
+
 b{
     font-family: Georgia, Arial;
 }
@@ -146,3 +152,25 @@ a:hover {
     width: 70%;
 }
 /***************************************/
+/****************** RWD ****************/
+@media screen and (max-width:650px) {
+    .container{
+        width: 80%;
+        /* border-radius: 10px; */
+        padding: 10px 12px;
+    }
+    .slide_show{
+        padding-left: 45px;
+        margin-top: 10px;
+        margin-left: 22.5px;
+        margin-right: 0.5in;
+        font-family: Georgia, Arial;
+    }
+    
+
+    table.info td.frame {
+        display: block;
+        min-height: 1.25em;
+        text-align: left;
+    }
+} 
