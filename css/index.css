@@ -22,7 +22,7 @@
   width: 0;
   top: 0;
   left: 0;
-  background-color: rgb(211, 211, 211);
+  background-color: rgba(211, 211, 211, 0.945);
   overflow-x: hidden;
   transition: 0.2s;
   padding-top: 66px;
