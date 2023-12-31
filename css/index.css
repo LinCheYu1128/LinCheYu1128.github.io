@@ -72,8 +72,13 @@
 }
 
 .slide_1 {
+  display: none;
+}
+
+.slide_mobile {
   width: 100%;
-  /* z-index: -1; */
+  /* padding-top: 10px; */
+  display: block;
 }
 /*********************************************/
 /***************** footer ********************/
@@ -125,6 +130,16 @@
     transition: unset;
     text-decoration: none;
   }
+  .slide_1 {
+    width: 100%;
+    padding-top: 75px;
+    display: block;
+    /* z-index: -1; */
+  }
+  .slide_mobile {
+    display: none;
+  }
+  /*********************************************/
   /**********************************************/
   .footer{
     padding-left: 75px;
