@@ -22,7 +22,7 @@
   width: 0;
   top: 0;
   left: 0;
-  background-color: rgba(122, 122, 122, 0.164);
+  background-color: rgb(211, 211, 211);
   overflow-x: hidden;
   transition: 0.2s;
   padding-top: 66px;
@@ -32,7 +32,7 @@
   padding: 8px 8px 8px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  color: #3b3b3b;
   transition: all 0.3s ease-out;
 }
 
@@ -49,7 +49,7 @@
   text-decoration: none;
   visibility: hidden;
   /* transition: opacity 0.3s ; */
-  color: #818181;
+  color: #3b3b3b;
 }
 
 #openbtn {
@@ -60,7 +60,7 @@
   top: 18px;
   text-decoration: none;
   /* transition: opacity 0.3s ; */
-  color: #818181;
+  color: #3b3b3b;
 }
 /**********************************************/
 

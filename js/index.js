@@ -2,7 +2,7 @@
 // document 拿標籤(插入CSS....)
 //call back
 function openNav() {
-    document.getElementById("sidebar_nav").style.width = "250px";
+    document.getElementById("sidebar_nav").style.width = "180px";
     document.getElementById("openbtn").style.visibility = "hidden";
     document.getElementById("closebtn").style.visibility = "visible";
     // document.getElementById("openbtn").style.fontSize = "0px";
